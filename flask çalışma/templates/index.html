@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="jumbotron text-center">
+    <h3> xxxxxxxxxxx firması</h3>
+    <p> Anasayfa</p>
+</div>
+
+<ul>
+{% for article in articles  %}
+    <li>article id: {{article.id}}- title:{{article.title}}-content:{{article.content}}  </li>
+
+{% endfor %}   </ul>
+
+{% endblock %}

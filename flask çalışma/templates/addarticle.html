@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block body %}
+{% from "includes/formhelpers.html" import render_field %}
+<h3>Ürün Oloştur</h3>
+<hr>
+<form action="/addarticle" method="post" enctype="multipart/form-data">
+    {{ render_field(form.title, class="form-control") }}
+    <p></p>
+    {{ render_field(form.content,class="form-control") }}
+    <p></p>
+    
+    <p></p>
+    <button type="submit" class="btn btn-primary">Ürün Ekle</button>
+</form>
+
+{% endblock body %}
