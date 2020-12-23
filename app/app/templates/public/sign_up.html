@@ -1,0 +1,35 @@
+{%extends "public/templates/public_templates.html"%}
+
+
+{% block title%}Sign up{%endblock%}
+{% block main%}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Sign Up</h1>
+            <hr>
+            <form action="/sign-up" method="POST">
+               
+
+                <div class="form_group">
+                    <label> Username</label>
+                    <input class="form-control" type="text" name="username" placeholder="Please enter the name">
+                </div>
+                <div class="form_group">
+                    <label> Email</label>
+                    <input class="form-control" type="email" name="email" placeholder="Please enter the email">
+                </div>
+                <div class="form_group">
+                    <label> password</label>
+                    <input class="form-control" type="password" name="password" placeholder="Please enter password">
+                </div>
+                <p></p>
+                <button type="submit" class="btn btn-primary">Sing up</button>
+
+            </form>
+
+
+        </div>
+    </div>
+</div>
+{%endblock%}

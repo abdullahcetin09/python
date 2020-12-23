@@ -1,0 +1,16 @@
+{%extends "public/templates/public_templates.html"%}
+
+
+{% block title%}about{%endblock%}
+{% block main%}
+<div class ="container">
+    <div class ="row">
+        <div class="col">
+            <h1>About</h1>
+            
+            
+            <p>{{date|clean_date}}</p>
+        </div>
+    </div>
+</div>
+{%endblock%}
